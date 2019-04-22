@@ -14,8 +14,8 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           ansible-%{rolename}
-Version:        XXX
-Release:        XXX
+Version:        9.1.0
+Release:        1%{?dist}
 Summary:        Ansible role for setting up IPSEC tunnels for TripleO
 
 Group:          System Environment/Base
@@ -68,4 +68,7 @@ export SKIP_PIP_INSTALL=1
 
 
 %changelog
+* Mon Apr 22 2019 RDO <dev@lists.rdoproject.org> 9.1.0-1
+- Update to 9.1.0
+
 
